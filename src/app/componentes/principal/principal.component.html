@@ -1,0 +1,45 @@
+
+<header class="cabecera">
+    <nav class="cabecera-container" (scroll)="movimientoHeader($event)" #cabecera>
+        <div class="cabecera-izquierda">
+            <img class="iz-img-1" src="/assets/imgs/menu-burger (2).svg" (click)="mostrarDesplegable()" alt="">
+            <img class="iz-img-2" src="/assets/imgs/logo-cortina.png" width="80px" alt="">
+        </div>
+        <div class="cabecera-list">
+            <a class="cabecera-item" href="">Inicio</a>
+            <a class="cabecera-item" href="">Nosotros</a>
+            <a class="cabecera-item" href="">Cortinas</a>
+            <a class="cabecera-item" href="">Contactenos</a>
+        </div>
+    </nav>
+    <div class="menu-desplegable" #desplegable>
+        <div class="text-end">
+            <span class="cerrar-desplegable fs-3 me-1 p-2" (click)="cerrarDesplegable()" >&times;</span>
+        </div>
+        <h4 class="text-black text-center">Sobre nosotros</h4>
+        <p class="px-4 text-justify fs-6 pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, distinctio sed. Officia id fuga suscipit odit blanditiis ipsa dolor fugit corrupti nihil porro! Necessitatibus, reprehenderit maiores. Dolorem unde quos odio!</p>
+
+        <div class="position-absolute w-100 pb-2 text-center bottom-0 start-50 translate-middle-x">
+            <img src="/assets/imgs/wtp.svg" width="60px" alt="logo de cortina">
+            <span class="text-dark fs-7 wtp-help">¿Necesitas ayuda?</span>
+        </div>
+
+    </div>
+
+    <div class="cabecera-descripcion">
+        <h1 class="text-white titulo">Cotizacion de cortinas</h1>    
+        <span class="d-block pb-3 text-white ">Cortizacion de cortinas de manera facil y simple.</span>
+        <button class="btn btn-danger">Cotizar cortina</button>        
+    </div>
+    
+
+</header>
+
+<section class="elegirnos">
+    <div class="text-center my-3">
+        <span class="fs-2 elegirnos-titulo">Por que elegirnos?</span>
+    </div>
+    <p class="elegirnos-texto">
+        Somos una pequeña empresa con una gran variedad de servicios para Oficinas, Hogares, Habitaciones, Departamentos, Show Room y Hoteles para mejorar visual y fisicamente tus nesecidades para tu vida. Las instalaciones que realizamos tenemos Cortinas modernas, Rollers Duo Zebra y Black Out, Estores Infantiles, Puertas de Ducha, Mámparas de Vidrios Templado, Alfombras, Drywall y Cielo Raso, etc.
+    </p>
+</section>
